@@ -1,48 +1,71 @@
 
-/* Resetting some basic styles */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
     color: #333;
-    line-height: 1.6;
+    text-align: center;
+    line-height: 1.8;
+    padding: 20px;
 }
 
+/* Header */
 header {
-    text-align: center;
-    padding: 50px;
-    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 5rem;
+    font-weight: bold;
 }
 
+header p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Section Styling */
 section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 80px 0;
 }
 
-#projects .project-container {
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.project-container {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
 }
 
 .project {
-    flex: 1;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
+    font-size: 1.5rem;
 }
 
+/* Contact Section */
+#contact p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #666;
 }
