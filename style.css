@@ -1,0 +1,48 @@
+
+/* Resetting some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#projects .project-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
