@@ -23,11 +23,11 @@ header {
 }
 
 .profile-pic {
-    width: 150px; /* Set the square dimensions */
-    height: 150px; /* Ensures the image is square */
-    object-fit: cover; /* Crops the image to fit within the square */
+    width: 180px; /* Make the picture rectangular */
+    height: 220px; /* Adjust height for rectangle */
+    object-fit: cover; /* Crops the image to fit within the rectangle */
     object-position: top; /* Crops from the top */
-    border-radius: 10px; /* Slight rounded corners for a softer look */
+    border-radius: 0px; /* Remove the rounding, making it rectangular */
 }
 
 .intro h1 {
@@ -49,8 +49,8 @@ header {
 /* Main Content */
 main {
     max-width: 1100px; /* Increased max-width */
-    margin: 0 auto; /* Center content */
-    padding: 20px; /* Reduce padding on the sides */
+    margin: 40px auto; /* Ensure equal margins on all sides */
+    padding: 20px;
 }
 
 h2 {
