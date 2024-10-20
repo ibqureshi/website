@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 20px; /* Equal padding on all sides */
 }
 
 .profile {
@@ -50,7 +50,7 @@ header {
 main {
     max-width: 1100px; /* Increased max-width */
     margin: 40px auto; /* Ensure equal margins on all sides */
-    padding: 20px;
+    padding: 20px; /* Equal padding on all sides */
 }
 
 h2 {
@@ -58,27 +58,26 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* About Section */
-#about p {
+/* About, Research, and Contact Sections */
+section {
+    margin: 40px 0; /* Equal margins for all sections */
+}
+
+#about p, #research p, #contact p {
     margin-bottom: 20px;
 }
 
-/* Research Section */
-#research ul {
+#research ul, #about ul {
     list-style: none;
     padding: 0;
 }
 
-#research ul li {
+#research ul li, #about ul li {
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
-/* Contact Section */
-#contact p {
-    margin-bottom: 10px;
-}
-
+/* Footer */
 footer {
     text-align: center;
     margin-top: 40px;
