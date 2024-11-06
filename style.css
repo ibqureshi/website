@@ -1,86 +1,208 @@
 
-/* General Styling */
+:root {
+  --primary-color: #2d3436;
+  --secondary-color: #6c5ce7;
+  --accent-color: #00cec9;
+  --background-color: #ffeaa7;
+  --text-color: #2d3436;
+  --hover-color: #fd79a8;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #ffffff; /* Background is white */
-    line-height: 1.8;
-    margin: 0;
-    padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  background-image: 
+    radial-gradient(circle at 100% 100%, var(--accent-color) 0, transparent 20%),
+    radial-gradient(circle at 0% 0%, var(--secondary-color) 0, transparent 20%);
+  background-attachment: fixed;
 }
 
-/* Header Section */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px; /* Equal padding on all sides */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
-.profile {
-    display: flex;
-    align-items: center;
+#navbar a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-.profile-pic {
-    width: 180px; /* Make the picture rectangular */
-    height: 220px; /* Adjust height for rectangle */
-    object-fit: cover; /* Crops the image to fit within the rectangle */
-    object-position: top; /* Crops from the top */
-    border-radius: 0px; /* Remove the rounding, ensuring the picture is rectangular */
+#navbar a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--hover-color);
+  transition: width 0.3s ease;
 }
 
-.intro h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+#navbar a:hover:after {
+  width: 100%;
 }
 
-.intro p {
-    font-size: 1.2rem;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.contact-icons a {
-    margin-right: 10px;
-    font-size: 1.5rem;
-    text-decoration: none;
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
 }
 
-/* Main Content */
-main {
-    max-width: 1100px; /* Increased max-width */
-    margin: 40px auto; /* Ensure equal margins on all sides */
-    padding: 20px; /* Equal padding on all sides */
+.profile-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 3px solid var(--secondary-color);
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.profile-image:hover {
+  transform: rotate(5deg);
 }
 
-/* About, Research, and Contact Sections */
-section {
-    margin: 40px 0; /* Equal margins for all sections */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
-#about p, #research p, #contact p {
-    margin-bottom: 20px;
+p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.7;
 }
 
-#research ul, #about ul {
-    list-style: none;
-    padding: 0;
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
-#research ul li, #about ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+.social-links a {
+  background: var(--secondary-color);
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Footer */
+.social-links img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+social-links a:hover {
+  transform: translateY(-5px) rotate(10deg);
+  background: var(--hover-color);
+}
+
+.section {
+  margin: 4rem 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: white;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.project-card:hover {
+  transform: translateX(10px);
+  border-color: var(--accent-color);
+}
+
+.project-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.project-card a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
     text-align: center;
-    margin-top: 40px;
+    padding: 1.5rem;
+  }
+  
+  #navbar a {
+    margin-left: 1rem;
     font-size: 0.9rem;
-    color: #777;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
