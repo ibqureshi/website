@@ -1,70 +1,61 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel='stylesheet' href='css/styles.css'>
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <title>Ibraheem Qureshi | Home</title>
-  <meta property="og:title" content="Ibraheem Qureshi">
-  <meta property="og:description" content="Ibraheem Qureshi's digital profile.">
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='css/styles.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibraheem Qureshi | Home</title>
+    <meta property="og:title" content="Ibraheem Qureshi">
+    <meta property="og:description" content="Ibraheem Qureshi's digital profile.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav id="navbar">
+        <a href="#contact">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+    </nav>
 
-  <div id="navbar">
-    <a href="#contact" style ="float: right;">contact</a>
-    <a href="#projects" style ="float: right;">projects</a>
-    <a href="#about" style ="float: right;">about</a>
+    <div class="container">
+        <section class="profile-section">
+            <img src="banff.jpg" alt="Profile" class="profile-image">
+            <div>
+                <h1>IBRAHEEM QURESHI</h1>
+                <p>Hello! I'm a third-year medical student based in New York. I'm passionate about medicine and seeing beauty in the world. When I'm not busy working on research projects focused on orthopedic surgery, I like to read a gripping fantasy novel, learn more about my heritage, take pictures of the mundane, and catch a game of my favorite team, Manchester United.</p>
+                
+                <div class="social-links">
+                    <a href='https://www.linkedin.com/in/ibraheem-qureshi' target="_blank">
+                        <img src="linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href='mailto:iqures01@nyit.edu'>
+                        <img src="gmail.svg" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </section>
 
-  <script src='js/scroll.js'></script>
-</div>
+        <section id="about" class="section">
+            <h1>ABOUT</h1>
+            <p>I've worked on projects involving many areas of Orthopedics including sports, trauma, diversity, and arthroplasty. I'm most interested in sports injury trends and identifying factors that may improve or worsen playing conditions. I also have a passion for giving back to my heritage and working in Pakistan.</p>
+            <p>I'm an avid Manchester United fan, a huge photography/videography enthusiast, and really into learning more about my heritage.</p>
+        </section>
 
-<img src="banff.jpg" alt="Profile" style="float: left; width:190px;height:190px;display: block;">
-<h1 style = "font-size: 20px;">IBRAHEEM QURESHI</h1>
-<p style = "font-size: 14px;">Hello! I'm a third-year medical student based in New York. I'm passionate about medicine and seeing beauty in the world. When I'm not busy working on research projects focused on orthopedic surgery, I like to read a gripping fantasy novel, learn more about my heritage, take pictures of the mundane, and catch a game of my favorite team, Manchester United. </p>
-<p>
-  <center>
-    <a href = 'https://www.linkedin.com/in/ibraheem-qureshi'><img id = 'social' src="linkedin.svg" alt="Profile" style="width:20px;height:20px;" ></a>
-    <a href = 'mailto:iqures01@nyit.edu'><img id= 'social' src="gmail.svg" alt="Profile" style="width:20px;height:20px;" ></a>
+        <section id="projects" class="section">
+            <h1>PROJECTS</h1>
+            <div class="project-card">
+                <img src="scholar.svg" alt="Search" style="width:110px;height:110px;">
+                <div>
+                    <h2>Research</h2>
+                    <p>Find my finished research projects <a href='https://scholar.google.com/citations?user=6t3HmjgAAAAJ&hl=en' target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </section>
 
-  </center>
-</p>
-<hr / style = "clear: left;">
-<br />
-
-
-  <div id = "about">
-
-    <h1> ABOUT </h1>
-    <p> ---
-    </p>
-    <p>
-      I've worked on projects involving many areas of Orthopedics including sports, trauma, diversity, and arthroplasty. I'm most interested in sports injury trends and identifying factors that may improve or worsen playing conditions. I also have a passion for giving back to my heritage and working in Pakistan.
-    </p>
-    <p>
-      I'm an avid Manchester United fan, a huge photography/videography enthusiast, and really into learning more about my heritage.
-    </p>
-  </div>
-
-  <br />
-  <hr />
-  <br />
-
-  <div id = 'projects'>
-    <h1> PROJECTS </h1>
-     <div style = 'clear: left;'>
-      <img src="scholar.svg" alt="Search" style="float: left; width:110px;height:110px;display: block;">
-      <a href= 'https://scholar.google.com/citations?user=6t3HmjgAAAAJ&hl=en'><h2> Research </h2> </a>
-      <p>Find my finished research projects <a href ='https://scholar.google.com/citations?user=6t3HmjgAAAAJ&hl=en'>here</a>.</p>
+        <footer>
+            <p>© 2024 designed and built by Ibraheem Qureshi</p>
+        </footer>
     </div>
 
-
-  </div>
-
-
-  <div style="clear: left">
-    <br />
-    <hr />
-    <p style = "text-align: center;"> © 2024 designed and built by Ibraheem Qureshi</p>
-  </div>
+    <script src='js/scroll.js'></script>
 </body>
 </html>
